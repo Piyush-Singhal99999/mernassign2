@@ -1,18 +1,23 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>task 1</title>
-    </head>
+        <title>Task1</title>
+        </head>
     <body>
+        <p>Enter number:&nbsp<input type="text" id="num"></p>
+        <button type="submit" onclick="cal()">Reverse </button>
+        <p id="output"></p>
         <script>
-            
-            function rev(num){
-                let numstr = num.toString();
-                let revstr=numstr.split('').reverse().join('');
-                return revstr;
-            }
-            console.log("Example x = 32242")
-            console.log("Expected Output :"+" "+rev(32243));
+        function cal(){
+        let a=document.getElementById("num").value;
+        function reverseString(str) {
+            return str.split("").reverse().join("");
+        }
+        let b=reverseString(a);
+        document.getElementById("output").innerHTML=b;
+        }
         </script>
-    </body>
+</body>
 </html>
+        
